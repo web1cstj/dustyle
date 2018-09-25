@@ -1,0 +1,28 @@
+body {
+	background-image:url(images/agrumes.png);
+	font-family:candela;
+	font-size:20px;
+}
+nav a {
+  background-color: #339900;
+  border: 1px solid black;
+  color: white;
+  display: block;
+  font-size: smaller;
+  font-weight: bold;
+  line-height: 1em;
+  margin: 1px 0;
+  padding: 3px 5px;
+  text-decoration: none;
+	-moz-border-radius:5px;
+	border-radius:5px;
+}
+nav a:hover {
+	background-color: #006600;
+	color:#FFFF00
+}
+div.contenu p {
+	text-align:justify;
+}
+nav li {
+}

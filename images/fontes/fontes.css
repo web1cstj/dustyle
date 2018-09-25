@@ -1,0 +1,171 @@
+/*
+Feuille de styles incluant TOUTES les fontes de ce dossier.
+ATTENTION! Ne pas faire cela dans la "vraie vie", car ça oblige l'usager à télécharger
+des fontes dont il n'a pas besoin. N'inclure QUE les fontes sui se trouvent réellement
+dans la page ou, du moins, dans le site.
+*/
+@font-face {
+	font-family: Whiterabbit;
+	src: url(WHITRABT.TTF);
+}
+@font-face {
+	font-family: Dearlove;
+	src: url("Dear Love.ttf");
+}
+@font-face {
+	font-family: TeamSpirit;
+	src: url(TEAMSPIR.TTF);
+}
+@font-face {
+	font-family: Monofur;
+	src: url(monof55.ttf);
+}
+@font-face {
+	font-family: Monofur;
+	font-style:italic;
+	src: url(monof56.ttf);
+}
+@font-face {
+	font-family: jackinput;
+	src: url(JAi_____.TTF);
+}
+@font-face {
+	font-family: bones;
+	src: url(BONEAPA.TTF);
+}
+@font-face {
+	font-family: dearestfriend;
+	src: url("Dearest Friend.ttf");
+}
+@font-face {
+	font-family: KanzleiInitialen;
+	src: url("Kanzlei-Initialen.ttf");
+}
+@font-face {
+	font-family:MorrisRomanBlack;
+	src: url("MorrisRomanBlack.ttf");
+}
+@font-face {
+	font-family: queen_country;
+	src: url("queen_country/queencountry.ttf");
+}
+@font-face {
+	font-family: queen_country;
+	font-weight:bold;
+	src: url("queen_country/queencountryb.ttf");
+}
+@font-face {
+	font-family: queen_country;
+	font-weight:bold;
+	font-style:italic;
+	src: url("queen_country/queencountrybi.ttf");
+}
+@font-face {
+	font-family: queen_country;
+	font-style:italic;
+	src: url("queen_country/queencountryi.ttf");
+}
+@font-face {
+	font-family: serifnew;
+	src: url("serif/SERIN___.ttf");
+}
+@font-face {
+	font-family: serifnew;
+	font-weight:bold;
+	src: url("serif/SERIBL__.ttf");
+}
+@font-face {
+	font-family: serifnew;
+	font-style:italic;
+	src: url("serif/SERINI__.ttf");
+}
+@font-face {
+	font-family: serifnew;
+	font-weight:bold;
+	font-style:italic;
+	src: url("serif/SERIBLI_.ttf");
+}
+@font-face {
+	font-family: twister;
+	src: url("twister.ttf");
+}
+@font-face {
+	font-family: Averia;
+	src: url("averia_sans/AveriaSans-Regular.ttf");
+}
+@font-face {
+	font-family: Averia;
+	font-weight:bold;
+	src: url("averia_sans/AveriaSans-Bold.ttf");
+}
+@font-face {
+	font-family: Averia;
+	font-style:italic;
+	src: url("averia_sans/AveriaSans-Italic.ttf");
+}
+@font-face {
+	font-family: Averia;
+	font-weight:bold;
+	font-style:italic;
+	src: url("averia_sans/AveriaSans-BoldItalic.ttf");
+}
+@font-face {
+	font-family:dream_orphans;
+	src: url("dream_orphans/dream orphans.ttf");
+}
+@font-face {
+	font-family:dream_orphans;
+	font-weight:bold;
+	src: url("dream_orphans/dream orphans bd.ttf");
+}
+@font-face {
+	font-family:dream_orphans;
+	font-style:italic;
+	src: url("dream_orphans/dream orphans it.ttf");
+}
+@font-face {
+	font-family:dream_orphans;
+	font-weight:bold;
+	font-style:italic;
+	src: url("dream_orphans/dream orphans bd it.ttf");
+}
+@font-face {
+	font-family:steelfish;
+	src: url("steelfish/steelfish rg.otf");
+}
+@font-face {
+	font-family:steelfish;
+	font-weight:bold;
+	src: url("steelfish/steelfish bd.otf");
+}
+@font-face {
+	font-family:steelfish;
+	font-style:italic;
+	src: url("steelfish/steelfish rg it.otf");
+}
+@font-face {
+	font-family:steelfish;
+	font-weight:bold;
+	font-style:italic;
+	src: url("steelfish/steelfish bd it.otf");
+}
+@font-face {
+	font-family:candela;
+	src: url("candela/CandelaBook.otf");
+}
+@font-face {
+	font-family:candela;
+	font-weight:bold;
+	src: url("candela/CandelaBold.otf");
+}
+@font-face {
+	font-family:candela;
+	font-style:italic;
+	src: url("candela/CandelaItalic.otf");
+}
+@font-face {
+	font-family:candela;
+	font-weight:bold;
+	font-style:italic;
+	src: url("candela/CandelaBoldItalic.otf");
+}

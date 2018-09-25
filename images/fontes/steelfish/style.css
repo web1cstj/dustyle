@@ -1,0 +1,32 @@
+@font-face {
+	font-family:'steelfish';
+	src:url('steelfish rg.otf');
+}
+@font-face {
+	font-family:'steelfish';
+	src:url('steelfish bd.otf');
+	font-weight:bold;
+}
+@font-face {
+	font-family:'steelfish';
+	src:url('steelfish it.otf');
+	font-style:italic;
+}
+@font-face {
+	font-family:'steelfish';
+	src:url('steelfish eb.otf');
+	font-weight:bold;
+	font-style:italic;
+}
+@font-face {
+	font-family:'steelfish';
+	src:url('steelfish bd it.otf');
+	font-weight:900;
+	font-style:italic;
+}
+@font-face {
+	font-family:'steelfish';
+	src:url('steelfish ed it.otf');
+	font-weight:900;
+	font-style:italic;
+}

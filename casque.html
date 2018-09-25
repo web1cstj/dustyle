@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!--
+Comment regarder cette page
+===========================
+Le code HTML de cette page n'a pas été conçu pour être consulté.
+Si toutefois votre curiosité vous y pousse, vous devez tenir ceci en compte
+- Cette page intègre un CSS contenant toutes les fontes disponibles dans le dossier fontes.
+  Ce n'est pas une bonne pratique. Ne pas répéter.
+- Cette page utilise du Javascript. Notamment, la librairie JQuery. Il se peut donc que le
+  résultat final ne réflète pas exactement le code ci-dessous.
+- Dans les attributs styles, il y a des "commentaires css". Ils servent d'indication pour l'affichage des bulles.
+  Ils ne font donc pas partie du style proprement dit. Vous ne devez donc pas en tenir compte.
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="UTF-8" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js" type="text/javascript"></script>
+		<script src="bullestyle.js" type="text/javascript"></script>
+		<!-- <link rel="stylesheet" type="text/css" href="bullestyle.css" /> -->
+		<link rel="stylesheet" type="text/css" href="images/fontes/fontes.css" />
+		<style type="text/css">
+			body{
+				font-family:queen_country, arial;
+				background-image:url(images/papier.jpg);
+			}
+		</style>
+		<title>Le positionnement dans la page</title>
+	</head>
+  <body>
+	<div style="/**/font-size:12px;position:absolute; top:0; right:0; background:white; padding:0 3px;"><a href="bonbon.html">Prochaine page : Le CSS, c'est du bonbon</a></div>
+		<div class="interface">
+		<h1 style="font-family:DearLove;font-size:300%;margin:0; ">Le positionnement dans la page</h1>
+			<div style="">Une balise &lt;div&gt;&lt;/div&gt; ordinaire</div>
+			<div style="background-color:lightgoldenrodyellow; color:#65563e;">Une balise &lt;div&gt;&lt;/div&gt; avec un arrière-plan et une couleur.</div>
+			<div style="padding:1em;/**/background-color:lightgoldenrodyellow; color:#65563e;">La même balise avec un padding uniforme</div>
+			<div style="margin:1em;/**/padding:1em;background-color:lightgoldenrodyellow; color:#65563e;">La même balise avec un margin uniforme</div>
+			<div style="border-width:3px;border-style:solid;border-color:#65563e; /**/color:#65563e;margin:1em;padding:1em;background-color:lightgoldenrodyellow; color:#65563e;">On ajoute une bordure (uniforme)</div>
+			<div style="border:3px solid #65563e; /*border-width:3px;border-style:solid;border-color:#65563e;*//**/ color:#65563e;margin:1em;padding:1em;background-color:lightgoldenrodyellow; color:#65563e;">On simplifie la bordure (l'ordre des valeurs n'est pas important)</div>
+			<div style="width:700px; /**/border:3px solid #65563e; color:#65563e;margin:1em;padding:1em;background-color:lightgoldenrodyellow; color:#65563e;">Cette boîte était trop large</div>
+			<div style="margin-top:1em;margin-right:auto;margin-bottom:1em;margin-left:auto;/**/width:700px; border:3px solid #65563e; color:#65563e; /* margin:1em; */ padding:1em;background-color:lightgoldenrodyellow; color:#65563e;">Et si on la centrait?</div>
+			<div style="margin:1em auto 1em auto;/*margin-top:1em;margin-right:auto;margin-bottom:1em;margin-left:auto;*//**/width:700px; border:3px solid #65563e; color:#65563e; padding:1em;background-color:lightgoldenrodyellow; color:#65563e;">J'aime bien simplifier les choses. Remarquez bien l'ordre des valeurs...</div>
+			<div style="margin:1em auto;/*margin:1em auto 1em auto;*//**/width:700px; border:3px solid #65563e; color:#65563e; padding:1em;background-color:lightgoldenrodyellow; color:#65563e;">Et comme si c'était pas déjà assez simple...</div>
+			<div style="/**/margin:1em auto;width:700px; border:3px solid #65563e; color:#65563e; padding:1em;background-color:lightgoldenrodyellow; color:#65563e;">
+				<img src="images/casquepetit.png" alt="Casque" style="width:117px;height:126px" />
+				On ajoute  une image et un peu de texte. Curabitur sit amet lorem gravida nisi dictum rhoncus in in sem. In id tellus sit amet enim convallis malesuada et quis lorem. Donec posuere est et magna sagittis vitae blandit leo euismod. Duis bibendum ligula vitae nulla ultricies malesuada. Morbi malesuada nulla vel magna dapibus vel condimentum lectus luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec felis mi, auctor nec malesuada faucibus, auctor at tellus. Suspendisse felis augue, ultricies ut commodo ac, sodales vel turpis. Sed mollis elit ut turpis vestibulum cursus. Mauris dictum erat ultricies felis laoreet ac ullamcorper libero pharetra. Ut sit amet blandit odio. Sed facilisis risus vel quam pretium non pretium velit blandit. Vestibulum nisi lectus, rhoncus ac tincidunt a, blandit non dolor.
+			</div>
+			<div style="/**/margin:1em auto;width:700px; border:3px solid #65563e; color:#65563e; padding:1em;background-color:lightgoldenrodyellow; color:#65563e;">
+				<img src="images/casquepetit.png" alt="Casque" style="float:left;/**/width:117px;height:126px" />
+				Elle est mieux intégrée au texte ainsi... Curabitur sit amet lorem gravida nisi dictum rhoncus in in sem. In id tellus sit amet enim convallis malesuada et quis lorem. Donec posuere est et magna sagittis vitae blandit leo euismod. Duis bibendum ligula vitae nulla ultricies malesuada. Morbi malesuada nulla vel magna dapibus vel condimentum lectus luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec felis mi, auctor nec malesuada faucibus, auctor at tellus. Suspendisse felis augue, ultricies ut commodo ac, sodales vel turpis. Sed mollis elit ut turpis vestibulum cursus. Mauris dictum erat ultricies felis laoreet ac ullamcorper libero pharetra. Ut sit amet blandit odio. Sed facilisis risus vel quam pretium non pretium velit blandit. Vestibulum nisi lectus, rhoncus ac tincidunt a, blandit non dolor.
+			</div>
+			<div style="/**/margin:1em auto;width:700px; border:3px solid #65563e; color:#65563e; padding:1em;background-color:lightgoldenrodyellow; color:#65563e;">
+				<img src="images/casquepetit.png" alt="Casque" style="margin-right:1em;/**/float:left;width:117px;height:126px" />
+				Il manquait une petite touche. Curabitur sit amet lorem gravida nisi dictum rhoncus in in sem. In id tellus sit amet enim convallis malesuada et quis lorem. Donec posuere est et magna sagittis vitae blandit leo euismod. Duis bibendum ligula vitae nulla ultricies malesuada. Morbi malesuada nulla vel magna dapibus vel condimentum lectus luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec felis mi, auctor nec malesuada faucibus, auctor at tellus. Suspendisse felis augue, ultricies ut commodo ac, sodales vel turpis. Sed mollis elit ut turpis vestibulum cursus. Mauris dictum erat ultricies felis laoreet ac ullamcorper libero pharetra. Ut sit amet blandit odio. Sed facilisis risus vel quam pretium non pretium velit blandit. Vestibulum nisi lectus, rhoncus ac tincidunt a, blandit non dolor.
+			</div>
+			<div style="/**/margin:1em auto;width:700px; border:3px solid #65563e; color:#65563e; padding:1em;background-color:lightgoldenrodyellow; color:#65563e;"><img src="images/casquepetit.png" alt="Casque" style="margin-left:1em;float:right;/*margin-right:1em;float:left;*//**/width:117px;height:126px" />Le client la préfère ainsi. Curabitur sit amet lorem gravida nisi dictum rhoncus in in sem. In id tellus sit amet enim convallis malesuada et quis lorem. Donec posuere est et magna sagittis vitae blandit leo euismod. Duis bibendum ligula vitae nulla ultricies malesuada. Morbi malesuada nulla vel magna dapibus vel condimentum lectus luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec felis mi, auctor nec malesuada faucibus, auctor at tellus. Suspendisse felis augue, ultricies ut commodo ac, sodales vel turpis. Sed mollis elit ut turpis vestibulum cursus. Mauris dictum erat ultricies felis laoreet ac ullamcorper libero pharetra. Ut sit amet blandit odio. Sed facilisis risus vel quam pretium non pretium velit blandit. Vestibulum nisi lectus, rhoncus ac tincidunt a, blandit non dolor.</div>
+			<div style="/**/margin:1em auto;width:700px; border:3px solid #65563e; color:#65563e; padding:1em;background-color:lightgoldenrodyellow; color:#65563e;">
+				<h2>On pourrait bien ajouter un titre</h2>
+				<img src="images/casquepetit.png" alt="Casque" style="/**/margin-left:1em;float:right;width:117px;height:126px" />
+				<p>Et quelques paragraphes. Curabitur sit amet lorem gravida nisi dictum rhoncus in in sem. In id tellus sit amet enim convallis malesuada et quis lorem.</p>
+				<p>Donec posuere est et magna sagittis vitae blandit leo euismod. Duis bibendum ligula vitae nulla ultricies malesuada. Morbi malesuada nulla vel magna dapibus vel condimentum lectus luctus.Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+				<p>Donec felis mi, auctor nec malesuada faucibus, auctor at tellus. Suspendisse felis augue, ultricies ut commodo ac, sodales vel turpis. Sed mollis elit ut turpis vestibulum cursus. Mauris dictum erat ultricies felis laoreet ac ullamcorper libero pharetra. Ut sit amet blandit odio. Sed facilisis risus vel quam pretium non pretium velit blandit. Vestibulum nisi lectus, rhoncus ac tincidunt a, blandit non dolor.</p>
+			</div>
+			<div style="/**/margin:1em auto;width:700px; border:3px solid #65563e; color:#65563e; padding:1em;background-color:lightgoldenrodyellow; color:#65563e;">
+				<h2>C'est un joli titre</h2>
+				<img src="images/casquepetit.png" alt="Casque" style="/**/margin-left:1em;float:right;width:117px;height:126px" />
+				<p style="font-weight:bold; font-style:italic; font-size:larger;">Souvent, le premier paragraphe est plus important. On lui donne de l'importance. Curabitur sit amet lorem gravida nisi dictum rhoncus in in sem. In id tellus sit amet enim convallis malesuada et quis lorem.</p>
+				<p><span style="border:1px solid black;">O</span>n peut également embellir le texte en ajoutant une letterine. On ajoute une balise span. Donec posuere est et magna sagittis vitae blandit leo euismod. Duis bibendum ligula vitae nulla ultricies malesuada. Morbi malesuada nulla vel magna dapibus vel condimentum lectus luctus.Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+				<p>Donec felis mi, auctor nec malesuada faucibus, auctor at tellus. Suspendisse felis augue, ultricies ut commodo ac, sodales vel turpis. Sed mollis elit ut turpis vestibulum cursus. Mauris dictum erat ultricies felis laoreet ac ullamcorper libero pharetra. Ut sit amet blandit odio. Sed facilisis risus vel quam pretium non pretium velit blandit. Vestibulum nisi lectus, rhoncus ac tincidunt a, blandit non dolor.</p>
+			</div>
+			<div style="/**/margin:1em auto;width:700px; border:3px solid #65563e; color:#65563e; padding:1em;background-color:lightgoldenrodyellow; color:#65563e;">
+				<h2>C'est un joli titre</h2>
+				<img src="images/casquepetit.png" alt="Casque" style="/**/margin-left:1em;float:right;width:117px;height:126px" />
+				<p style="font-weight:bold; font-style:italic; font-size:larger;">Curabitur sit amet lorem gravida nisi dictum rhoncus in in sem. In id tellus sit amet enim convallis malesuada et quis lorem.</p>
+				<p><span style="font-size:5em; font-family:KanzleiInitialen;/**//*border:1px solid black;*/">E</span>lle était un peu chétive cette lettrine. Donec posuere est et magna sagittis vitae blandit leo euismod. Duis bibendum ligula vitae nulla ultricies malesuada. Morbi malesuada nulla vel magna dapibus vel condimentum lectus luctus.Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+				<p>Donec felis mi, auctor nec malesuada faucibus, auctor at tellus. Suspendisse felis augue, ultricies ut commodo ac, sodales vel turpis. Sed mollis elit ut turpis vestibulum cursus. Mauris dictum erat ultricies felis laoreet ac ullamcorper libero pharetra. Ut sit amet blandit odio. Sed facilisis risus vel quam pretium non pretium velit blandit. Vestibulum nisi lectus, rhoncus ac tincidunt a, blandit non dolor.</p>
+			</div>
+			<div style="/**/margin:1em auto;width:700px; border:3px solid #65563e; color:#65563e; padding:1em;background-color:lightgoldenrodyellow; color:#65563e;">
+				<h2>C'est un joli titre</h2>
+				<img src="images/casquepetit.png" alt="Casque" style="/**/margin-left:1em;float:right;width:117px;height:126px" />
+				<p style="/**/font-weight:bold; font-style:italic; font-size:larger;">Curabitur sit amet lorem gravida nisi dictum rhoncus in in sem. In id tellus sit amet enim convallis malesuada et quis lorem.</p>
+				<p><span style="float:left;margin-right:.2em;/**/font-size:5em;font-family:KanzleiInitialen;">E</span>t on sait déjà comment l'intégrer au texte. Donec posuere est et magna sagittis vitae blandit leo euismod. Duis bibendum ligula vitae nulla ultricies malesuada. Morbi malesuada nulla vel magna dapibus vel condimentum lectus luctus.Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+				<p>Donec felis mi, auctor nec malesuada faucibus, auctor at tellus. Suspendisse felis augue, ultricies ut commodo ac, sodales vel turpis. Sed mollis elit ut turpis vestibulum cursus. Mauris dictum erat ultricies felis laoreet ac ullamcorper libero pharetra. Ut sit amet blandit odio. Sed facilisis risus vel quam pretium non pretium velit blandit. Vestibulum nisi lectus, rhoncus ac tincidunt a, blandit non dolor.</p>
+			</div>
+			<div style="/**/margin:1em auto;width:700px; border:3px solid #65563e; color:#65563e; padding:1em;background-color:lightgoldenrodyellow; color:#65563e;">
+				<h2>C'est un joli titre</h2>
+				<img src="images/casquepetit.png" alt="Casque" style="/**/margin-left:1em;float:right;width:117px;height:126px" />
+				<p style="/**/font-weight:bold; font-style:italic; font-size:larger;">Curabitur sit amet lorem gravida nisi dictum rhoncus in in sem. In id tellus sit amet enim convallis malesuada et quis lorem.</p>
+				<p><span style="line-height: 1em; margin-bottom: -0.2em; margin-right: 0.1em; font-size: 4.3em;/**/float:left;/*margin-right:.2em;font-size:5em;*/font-family:KanzleiInitialen;">A</span>vec quelques petits ajustements. Donec posuere est et magna sagittis vitae blandit leo euismod. Duis bibendum ligula vitae nulla ultricies malesuada. Morbi malesuada nulla vel magna dapibus vel condimentum lectus luctus.Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+				<p>Donec felis mi, auctor nec malesuada faucibus, auctor at tellus. Suspendisse felis augue, ultricies ut commodo ac, sodales vel turpis. Sed mollis elit ut turpis vestibulum cursus. Mauris dictum erat ultricies felis laoreet ac ullamcorper libero pharetra. Ut sit amet blandit odio. Sed facilisis risus vel quam pretium non pretium velit blandit. Vestibulum nisi lectus, rhoncus ac tincidunt a, blandit non dolor.</p>
+			</div>
+		</div>
+  </body>
+</html>
