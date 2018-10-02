@@ -14,14 +14,15 @@ div.supprimer > * {
 	color:red !important;
 }
 div.bulle {
-	font-size:16px;
+	pointer-events: none;
+    font-size:16px;
 	margin-left:1em;
 	border:1px solid black;
 	padding:.5em;
 	background-color:rgba(255,2555,255,1);
 	display:none;
 	position:absolute;
-	-moz-border-radius:1em;-webkit-border-radius:1em;border-radius:1em;
+    border-radius:1em;
 	box-shadow:.2em .2em .2em rgba(0,0,0,.5);
 	font-family:monofur, courier new;
 	zzzfont-size:smaller;
