@@ -1,5 +1,4 @@
 /*jslint browser:true, esnext:true*/
-/*global $ */
 class Bullestyle {
     static ajouterStyle() {
         var link = document.head.appendChild(document.createElement("link"));
@@ -7,50 +6,16 @@ class Bullestyle {
         link.setAttribute("href", "bullestyle.css");
     }
     static load() {
-
+		var elements = Array.from(document.querySelectorAll("*[style]"));
+		elements.forEach(element => {
+			this.traiterElement(element);
+		});
+		this.ajouterIndicateurImage();
     }
-    static dom_prop(nom, valeur, nouveau, supprimer) {
-        var resultat = document.createElement('div');
-        if (nouveau) {
-            resultat.classList.add("nouveau");
-        } else {
-            resultat.classList.add("vieux");
-        }
-        if (supprimer) {
-            resultat.classList.add("supprimer");
-        }
-//        if (cacher) {
-//            prop.classList.add("cacher");
-//        }
-        var span = resultat.appendChild(document.createElement("span"));
-        span.innerHTML = nom;
-        resultat.appendChild(document.createTextNode(":"));
-        span = resultat.appendChild(document.createElement("span"));
-        span.innerHTML = valeur;
-        resultat.appendChild(document.createTextNode(";"));
-        return resultat;
-    }
-    static ajouterIndicateurImage() {
-        var indicateur = document.createElement("span");
-        indicateur.classList.add("indicateurBulle");
-        document.querySelectorAll("img.avecbulle").forEach(i => {
-            i.parentNode.insertBefore(indicateur.cloneNode(true), i);
-        });
-    }
-    static init() {
-        this.ajouterStyle();
-        window.addEventListener("load", () => this.load());
-    }
-}
-Bullestyle.init();
-
-$(function () {
-    var elements = Array.from(document.querySelectorAll("*[style]"));
-    elements.forEach(element => {
-        var $this = $(element);
-        var $bulle = $(document.createElement('div'))
-            .addClass("bulle");
-        var style = $this.attr("style");
+	static traiterElement(element) {
+        var bulle = document.createElement('div');
+        bulle.classList.add("bulle");
+        var style = element.getAttribute("style");
         style = style.replace(/^ */g, "").replace(/ *$/g, "").replace(/ *: */g, ":").replace(/ *; */g, ";").replace(/ *\/\* */g, "/*").replace(/ *\*\/ */g, "*/").replace(/;+/g, ";");
         style = style.split(";");
         var nouveau = true;
@@ -85,13 +50,45 @@ $(function () {
                 continue;
             }
             nbProps += 1;
-            var prop = Bullestyle.dom_prop(s[0], s[1], nouveau, supprimer);
-            $bulle.append(prop);
+            var prop = this.dom_prop(s[0], s[1], nouveau, supprimer);
+            bulle.appendChild(prop);
         }
         if (nbProps > 0) {
-            $this.addClass("avecbulle").after($bulle);
+            element.classList.add("avecbulle");
+			element.parentNode.insertBefore(bulle, element.nextSibling);
         }
-
-    });
-    Bullestyle.ajouterIndicateurImage();
-});
+	}
+    static dom_prop(nom, valeur, nouveau, supprimer=false, cacher=false) {
+        var resultat = document.createElement('div');
+        if (nouveau) {
+            resultat.classList.add("nouveau");
+        } else {
+            resultat.classList.add("vieux");
+        }
+        if (supprimer) {
+            resultat.classList.add("supprimer");
+        }
+        if (cacher) {
+            resultat.classList.add("cacher");
+        }
+        var span = resultat.appendChild(document.createElement("span"));
+        span.innerHTML = nom;
+        resultat.appendChild(document.createTextNode(":"));
+        span = resultat.appendChild(document.createElement("span"));
+        span.innerHTML = valeur;
+        resultat.appendChild(document.createTextNode(";"));
+        return resultat;
+    }
+    static ajouterIndicateurImage() {
+        var indicateur = document.createElement("span");
+        indicateur.classList.add("indicateurBulle");
+        document.querySelectorAll("img.avecbulle").forEach(i => {
+            i.parentNode.insertBefore(indicateur.cloneNode(true), i);
+        });
+    }
+    static init() {
+        this.ajouterStyle();
+        window.addEventListener("load", () => this.load());
+    }
+}
+Bullestyle.init();
