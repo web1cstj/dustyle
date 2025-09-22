@@ -1,8 +1,8 @@
 # Exercice : On ajoute du style
 ## Préparation
 
-- Récupérer le dossier compressé <a href="https://github.com/web1cstj/dustyle/archive/refs/heads/depart.zip">dustyle.zip</a> et le décompresser.
-- Ouvrir le dossier `dustyle` dans `VSCode`.
+- Récupérer le dossier compressé <a href="https://github.com/web1cstj/dustyle/archive/refs/heads/depart.zip">dustyle-depart.zip</a> et le décompresser.
+- Ouvrir le dossier `dustyle-depart` dans `VSCode`.
 
 ## Consignes
 
@@ -28,3 +28,5 @@
 7.  Appliquer les styles aux balises correspondantes dans votre fichier.
     - Parfois, on doit enlever une propriété. Elle est alors indiquée en rouge.
 
+## Solution
+Vous pouvez télécharger la solution complète ici : <a href="https://github.com/web1cstj/dustyle/archive/refs/heads/solution.zip">dustyle-solution.zip</a>
