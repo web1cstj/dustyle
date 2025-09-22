@@ -1,55 +1,111 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-	<meta charset="UTF-8" />
-	<link rel="stylesheet" href="/src/web1.css" />
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-	<script type="module">
-		import App from "https://bobanum.github.io/theophile/App.js";
-		App.exec();
-	</script>
-	<script src="/src/Page.js" type="module"></script>
-	<title>On ajoute du style</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dustyle - Accueil</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 20px;
+			background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+			min-height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		
+		.container {
+			background: white;
+			border-radius: 15px;
+			padding: 40px;
+			box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+			text-align: center;
+			max-width: 600px;
+		}
+		
+		h1 {
+			color: #333;
+			margin-bottom: 10px;
+			font-size: 2.5em;
+		}
+		
+		.subtitle {
+			color: #666;
+			margin-bottom: 40px;
+			font-size: 1.2em;
+		}
+		
+		.links-container {
+			display: flex;
+			gap: 30px;
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+		
+		.link-card {
+			background: linear-gradient(45deg, #ff6b6b, #ee5a52);
+			border-radius: 10px;
+			padding: 30px 20px;
+			text-decoration: none;
+			color: white;
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+			min-width: 200px;
+			box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+		}
+		
+		.link-card:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+		}
+		
+		.link-card.bonbon {
+			background: linear-gradient(45deg, #ff9a9e, #fecfef);
+		}
+		
+		.link-card.casque {
+			background: linear-gradient(45deg, #a8edea, #fed6e3);
+		}
+		
+		.link-title {
+			font-size: 1.5em;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+		
+		.link-description {
+			font-size: 0.9em;
+			opacity: 0.9;
+		}
+		
+		.footer {
+			margin-top: 40px;
+			color: #666;
+			font-size: 0.9em;
+		}
+	</style>
 </head>
 <body>
-<h2>On ajoute du style</h2>
-<h3>Préparation</h3>
-<ol>
-	<li>Récupérer le dossier compressé <a href="dustyle.zip" class="download">dustyle.zip</a> et le décompresser.</li>
-	<li>Ouvrir le dossier <code class="nom">dustyle</code> dans <cite>Brackets</cite>.</li>
-</ol>
-<h3>Consignes</h3>
-<ul>
-	<li>
-		<img src="casque.png" style="margin-top:1.5em;margin-left:1em;border:1px solid black;width:17em;float:right;" alt="Exercice &quot;Le positionnement dans la page&quot;"/>
-		Exercice <span class="nom">Le positionnement dans la page</span>
-		<ol>
-			<li>Visiter la <a href="casque.html" target="_blank">page de l'exercice</a></li>
-			<li>Ouvrir le fichier <code class="nom">casque.html</code> dans <cite>Brackets</cite>.</li>
-			<li>Ouvrir également le fichier dans le fureteur afin de visualiser les changements.</li>
-			<li>Dans la balise ouvrante <code class="balise">body</code>, ajouter l'attribut <code class="attribut">style</code> avec la valeur suivante : <code class="valeur nq">font-family:queen_country;<br/>background-image:url(images/papier.jpg);</code></li>
-			<li>Tester la page.</li>
-			<li>Dans la page de l'exercice, placer la souris sur certains éléments, et une bulle apparaîtra. La bulle contient les propriétés à ajouter à l'élément concerné.</li>
-			<li>Appliquer les styles aux balises correspondantes dans fotre fichier.</li>
-			<li>La plupart du temps, on doit copier et coller le style d'un élément vers le suivant.</li>
-			<li>Parfois, on doit enlever une propriété. Elle est alors indiquée en rouge.</li>
-		</ol>
-	</li>
-	<li>
-        <img src="bonbon.png" style="margin-top:1.5em;margin-left:1em;border:1px solid black;width:14em;float:right;" alt="Exercice &quot;Le positionnement dans la page&quot;"/>
-        Exercice <span class="nom">Le CSS, c'est du bonbon</span>
-		<ol>
-			<li>Visiter la <a href="bonbon.html" target="_blank">page de l'exercice</a></li>
-			<li>Ouvrir le fichier <code class="nom">bonbon.html</code> dans <cite>Brackets</cite>.</li>
-			<li>Ouvrir également le fichier dans le fureteur afin de visualiser les changements.</li>
-			<li>Dans la balise ouvrante <code class="balise">body</code>, ajouter l'attribut <code class="attribut">style</code> avec la valeur suivante : <code class="valeur nq">background-image: url(images/agrumes.png);<br/>font-family: candela;font-size: 20px;</code></li>
-			<li>Tester la page.</li>
-			<li>Dans la page de l'exercice, placer la souris sur certains éléments, et une bulle apparaîtra. La bulle contient les propriétés à ajouter à l'élément concerné.</li>
-			<li>Appliquer les styles aux balises correspondantes dans fotre fichier.</li>
-			<li>Parfois, on doit enlever une propriété. Elle est alors indiquée en rouge.</li>
-		</ol>
-	</li>
-</ul>
+	<div class="container">
+		<h1>Dustyle</h1>
+		<p class="subtitle">Découvrez nos créations CSS</p>
+		
+		<div class="links-container">
+			<a href="casque.html" class="link-card casque">
+				<div class="link-title">🎧 Casque</div>
+				<div class="link-description">Explorez le design du casque</div>
+			</a>
+			<a href="bonbon.html" class="link-card bonbon">
+				<div class="link-title">🍭 Bonbon</div>
+				<div class="link-description">Le CSS, c'est du bonbon</div>
+			</a>
+			
+		</div>
+		
+		<div class="footer">
+			<p>Cliquez sur une carte pour accéder à la page correspondante</p>
+		</div>
+	</div>
 </body>
-
 </html>
