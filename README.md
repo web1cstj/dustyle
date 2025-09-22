@@ -6,7 +6,8 @@
 
 ## Consignes
 
-### Exercice "Le positionnement dans la page"
+### Exercice 1 : "Le positionnement dans la page"
+![Le positionnement dans la page](casque.png)
 1. Visiter la [page de l'exercice](https://web1cstj.github.io/dustyle/casque.html)
 2. Ouvrir le fichier `casque.html` dans `VSCode`.
 3. Ouvrir également le fichier dans le fureteur afin de visualiser les changements.
@@ -17,7 +18,7 @@
    - La plupart du temps, on doit copier et coller le style d'un élément vers le suivant.
    - Parfois, on doit enlever une propriété. Elle est alors indiquée en rouge.
 
-### Exercice Le CSS, c'est du bonbon
+### Exercice 2 : Le CSS, c'est du bonbon
 ![Le CSS, c'est du bonbon](bonbon.png)
 1. Visiter la [page de l'exercice](https://web1cstj.github.io/dustyle/bonbon.html)
 2. Ouvrir le fichier `bonbon.html` dans `VSCode`.
